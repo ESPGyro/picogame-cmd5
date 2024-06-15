@@ -1,7 +1,7 @@
 /**
  * BLE Command Processor
  */
-//% color=#0fbc11 icon="\uf113"
+//% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
     /**
      * Expand BLE command string
@@ -9,7 +9,7 @@ namespace BLECmd {
      * @param startChar Start character of the loop
      * @param endChar End character of the loop
      */
-   enum Actions {
+   export enum Actions {
     //% blockId="Forward" block="Forward"
     Forward = 1,
     //% blockId="Backward" block="Backward"
