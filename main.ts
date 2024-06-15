@@ -10,21 +10,19 @@
 //% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
 
- /**
-     * 六角形積木示例，选择前進或後退
-     * @param direction 方向选择
+    /**
+     * 六角形形状的逻辑比较积木示例
+     * 比较输入的两个值是否相等
+     * @param value1 第一个值
+     * @param value2 第二个值
      */
-    //% block="%direction"
-    //% direction.shadow="dropdown" direction.options="forward|backward"
+    //% block="%value1 等於 %value2 ?"
+    //% blockExternalInput=true
+    //% value1.shadow="value"
+    //% value2.shadow="value"
     //% weight=100
-    export function keyState(direction: string): void {
-        if (direction == "forward") {
-            // 在这里编写前进的逻辑
-            basic.showString("前進");
-        } else if (direction == "backward") {
-            // 在这里编写后退的逻辑
-            basic.showString("後退");
-        }
+    export function isEqual(value1: number, value2: number): boolean {
+        return value1 == value2;
     }
 
 
