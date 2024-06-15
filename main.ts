@@ -10,16 +10,25 @@
 //% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
 
-   /**
-     * 这是一个带参数的六角形积木示例
-     * @param value 描述参数的含义
+ /**
+     * 六角形積木示例，选择前進或後退
+     * @param direction 方向选择
      */
-    //% block="做一些事情 %value"
-    //% value.shadow="text"
+    //% block="%direction"
+    //% direction.shadow="dropdown" direction.options="forward|backward"
     //% weight=100
-    export function doSomething(value: string): void {
-        // 在这里编写带参数的逻辑
+    export function moveDirection(direction: string): void {
+        if (direction == "forward") {
+            // 在这里编写前进的逻辑
+            basic.showString("前進");
+        } else if (direction == "backward") {
+            // 在这里编写后退的逻辑
+            basic.showString("後退");
+        }
     }
+
+
+   
     /**
      * Expand BLE command string
      * @param s BLE command string to expand
