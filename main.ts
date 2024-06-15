@@ -29,8 +29,6 @@ namespace BLECmd {
     //% blockId="m11" block="m11"
     m11 = "11"
 } 
-
-
    
    //% block="%value1 等於 %value2 ?"
     //% value1.shadow="text"
@@ -38,12 +36,13 @@ namespace BLECmd {
     //% value2.fieldEditor="gridpicker" value2.fieldOptions.columns=3
     //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
-       if (value2 == "10") {
+       let value2Str = value2.toString();
+       if (value2Str == "10") {
           return value1=="a";
-       } else if (value2 == "11") {
+       } else if (value2Str == "11") {
           return value1=="b";
        } else {
-        return value1==value2;
+        return value1==value2Str;
        }
     }
 
