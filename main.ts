@@ -1,7 +1,7 @@
 /**
  * BLE Command Processor
  */
-   enum Actions {
+   export enum Actions {
     //% blockId="m1" block="m1"
     m1 = "1",
     //% blockId="m2" block="m2"
