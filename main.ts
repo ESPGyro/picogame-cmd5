@@ -1,14 +1,13 @@
 /**
  * BLE Command Processor
  */
-//% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
    enum Actions {
     //% blockId="Forward" block="Forward"
     Forward = 1,
     //% blockId="Backward" block="Backward"
     Backward = 2
 } 
-
+//% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
     /**
      * Expand BLE command string
