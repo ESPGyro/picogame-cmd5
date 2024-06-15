@@ -36,14 +36,40 @@ namespace BLECmd {
     //% value2.fieldEditor="gridpicker" value2.fieldOptions.columns=3
     //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
-       let value2Str = value2.toString();
-       if (value2Str == "10") {
-          return value1=="a";
-       } else if (value2Str == "11") {
-          return value1=="b";
-       } else {
-        return value1==value2Str;
-       }
+       export function isEqual(value1: string, value2: Actions): boolean {
+        // 使用一个临时变量存储 value2 的字符串表示
+        switch(value2) {
+            case Actions.m1:
+                return value1 == "1";
+                break;
+            case Actions.m2:
+                return value1 == "2";
+                break;
+            case Actions.m3:
+                return value1 == "3";
+                break;
+            case Actions.m4:
+                return value1 == "4";
+                break;
+            case Actions.m7:
+                return value1 == "7";
+                break;
+            case Actions.m8:
+                return value1 == "8";
+                break;
+            case Actions.m9:
+                return value1 == "9";
+                break;
+            case Actions.m10:
+                return value1 == "a";
+                break;
+            case Actions.m11:
+                return value1 == "b";
+                break;
+            default:
+                break;
+        }
+}
     }
 
     /**
