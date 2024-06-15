@@ -45,6 +45,7 @@ namespace BLECmd {
      * @param endChar End character of the loop
      */
     //% blockId="clearbuff" block="Clear Buffer"
+    //% weight=0
     export function clearbuff() {
     let bx: Buffer;
     bSize = 20
@@ -62,6 +63,7 @@ namespace BLECmd {
     }
 
     //% blockId="expandCommand" block="Convert BLE command |input %s"
+    //% weight=100
     export function expandCommand(s: string): string {
         let newStr: string = s.substr(2, s.length - 1);
         return loopAdd(newStr, '5', '6');
