@@ -35,7 +35,7 @@ namespace BLECmd {
      * @param startChar Start character of the loop
      * @param endChar End character of the loop
      */
-   //% blockId="selectAction" block="action %move"
+   //% blockId="selectAction" block="action|%move| "
    //% blockGap=1 weight=10 
     export function selectAction(move: Actions): string {
         if (move == Actions.Forward) {
