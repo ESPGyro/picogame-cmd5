@@ -1,3 +1,4 @@
 {
-    "BLECmd.expandCommand|block": "處理迴圈功能|輸入指令 %a"
+    "BLECmd.expandCommand|block": "處理迴圈功能|輸入指令 %a",
+    "BLECmd.selectAction|block": "基本指令|動作 %move"
 }
