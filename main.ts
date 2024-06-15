@@ -2,6 +2,13 @@
  * BLE Command Processor
  */
 //% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
+   enum Actions {
+    //% blockId="Forward" block="Forward"
+    Forward = 1,
+    //% blockId="Backward" block="Backward"
+    Backward = 2
+} 
+
 namespace BLECmd {
     /**
      * Expand BLE command string
@@ -9,15 +16,9 @@ namespace BLECmd {
      * @param startChar Start character of the loop
      * @param endChar End character of the loop
      */
-   export enum Actions {
-    //% blockId="Forward" block="Forward"
-    Forward = 1,
-    //% blockId="Backward" block="Backward"
-    Backward = 2
-} 
    //% blockId="selectAction" block="basic cmd |action %move"
    //% blockGap=1 weight=10 
-    export function selectAction(move: Actions): string {
+    export function selectAction(move: Actions){
         if (move == Actions.Forward) {
             return "1";
         } else if (move == Actions.Backward) {
