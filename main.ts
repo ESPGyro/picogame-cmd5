@@ -1,15 +1,8 @@
 /**
  * BLE Command Processor
  */
-//% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
-namespace BLECmd {
-    /**
-     * 逻辑比较积木示例
-     * 比较输入的两个值是否相等
-     * @param value1 輸入的值
-     * @param value2 指令編輯器代表的意思
-     */
-   export enum Actions {
+
+   enum Actions {
     //% blockId="m1" block="m1"
     m1 = "1",
     //% blockId="m2" block="m2"
@@ -29,6 +22,16 @@ namespace BLECmd {
     //% blockId="m11" block="m11"
     m11 = "11"
 } 
+
+//% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
+namespace BLECmd {
+    /**
+     * 逻辑比较积木示例
+     * 比较输入的两个值是否相等
+     * @param value1 輸入的值
+     * @param value2 指令編輯器代表的意思
+     */
+
    
    //% block="%value1 等於 %value2 ?"
     //% value1.shadow="text"
