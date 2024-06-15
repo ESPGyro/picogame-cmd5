@@ -11,17 +11,17 @@
 namespace BLECmd {
 
     /**
-     * 六角形形状的逻辑比较积木示例
+     * 逻辑比较积木示例
      * 比较输入的两个值是否相等
-     * @param value1 第一个值
-     * @param value2 第二个值
+     * @param value1 輸入的值
+     * @param value2 指令編輯器代表的意思
      */
     //% block="%value1 等於 %value2 ?"
     //% blockExternalInput=true
     //% value1.shadow="value"
     //% value2.shadow="value"
     //% weight=100
-    export function isEqual(value1: number, value2: number): boolean {
+    export function isEqual(value1: string, value2: Actions): boolean {
         return value1 == value2;
     }
 
