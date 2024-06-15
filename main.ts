@@ -17,9 +17,9 @@
     //% blockId="m9" block="m9"
     m9 = "9",
     //% blockId="m10" block="m10"
-    m10 = "a",
+    m10 = "10",
     //% blockId="m11" block="m11"
-    m11 = "b"
+    m11 = "11"
 } 
 //% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
@@ -35,7 +35,13 @@ namespace BLECmd {
     //% value2.shadow="value"
     //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
+       if (value2 == "10") {
+          return value1==="a";
+       } else if (value2 == "11") {
+          return value1==="b";
+       } else {
         return value1===value2;
+       }
     }
 
     /**
