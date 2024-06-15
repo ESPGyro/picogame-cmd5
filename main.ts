@@ -9,10 +9,12 @@ namespace BLECmd {
      * @param startChar Start character of the loop
      * @param endChar End character of the loop
      */
-   export enum Actions {
-     Forward = 1,
-     Backward = 2,
-}
+   enum Actions {
+    //% blockId="Forward" block="Forward"
+    Forward = 1,
+    //% blockId="Backward" block="Backward"
+    Backward = 2
+} 
    //% blockId="selectAction" block="basic cmd |action %move"
    //% blockGap=1 weight=10 
     export function selectAction(move: Actions): string {
