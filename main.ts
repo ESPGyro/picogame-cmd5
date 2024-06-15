@@ -9,7 +9,6 @@
 } 
 //% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
-
     /**
      * 逻辑比较积木示例
      * 比较输入的两个值是否相等
@@ -25,26 +24,13 @@ namespace BLECmd {
         return value1 == value2;
     }
 
-
-   
     /**
      * Expand BLE command string
      * @param s BLE command string to expand
      * @param startChar Start character of the loop
      * @param endChar End character of the loop
      */
-   //% blockId="selectAction" block="action|%move| "
-   //% blockGap=1 weight=10 
-   //% blockExternalInput=true
-   //% move.fieldEditor="gridpicker" move.fieldOptions.columns=3
-    export function selectAction(move: Actions): string {
-        if (move == Actions.Forward) {
-            return "1";
-        } else if (move == Actions.Backward) {
-            return "2";
-        }
-        return "";
-    }
+ 
 
     //% blockId="expandCommand" block="Convert BLE command |input %s"
     export function expandCommand(s: string): string {
