@@ -1,6 +1,6 @@
 {
     "BLECmd.expandCommand|block": "處理迴圈功能|輸入指令 %a",
-    "BLECmd.selectAction|block": "基本指令|動作 %move",
+    "BLECmd.selectAction|block": "基本指令|%move|動作 ",
     "Actions.Forward|block": "前進",
     "Actions.Backward|block": "後退"
 }
