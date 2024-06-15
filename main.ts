@@ -2,10 +2,24 @@
  * BLE Command Processor
  */
    enum Actions {
-    //% blockId="Forward" block="Forward"
-    Forward = "1",
-    //% blockId="Backward" block="Backward"
-    Backward = "2"
+    //% blockId="m1" block="m1"
+    m1 = "1",
+    //% blockId="m2" block="m2"
+    m2 = "2",
+    //% blockId="m3" block="m3"
+    m3 = "3",
+    //% blockId="m4" block="m4"
+    m4 = "4",
+    //% blockId="m7" block="m7"
+    m7 = "7",
+    //% blockId="m8" block="m8"
+    m8 = "8",
+    //% blockId="m9" block="m9"
+    m9 = "9",
+    //% blockId="m10" block="m10"
+    m10 = "a",
+    //% blockId="m11" block="m11"
+    m11 = "b"
 } 
 //% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
