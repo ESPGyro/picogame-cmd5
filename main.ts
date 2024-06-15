@@ -36,7 +36,6 @@ namespace BLECmd {
     //% value2.fieldEditor="gridpicker" value2.fieldOptions.columns=3
     //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
-       export function isEqual(value1: string, value2: Actions): boolean {
         // 使用一个临时变量存储 value2 的字符串表示
         switch(value2) {
             case Actions.m1:
@@ -69,7 +68,6 @@ namespace BLECmd {
             default:
                 break;
         }
-}
     }
 
     /**
