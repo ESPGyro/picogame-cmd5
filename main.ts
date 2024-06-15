@@ -1,7 +1,6 @@
 /**
  * BLE Command Processor
  */
-
    enum Actions {
     //% blockId="m1" block="m1"
     m1 = 1,
@@ -31,9 +30,7 @@ namespace BLECmd {
      * @param value1 輸入的值
      * @param value2 指令編輯器代表的意思
      */
-
-   
-   //% block="%value1 等於 %value2 ?"
+    //% block="%value1 等於 %value2 ?"
     //% value1.shadow="text"
     //% value2.shadow="dropdown"
     //% weight=10
