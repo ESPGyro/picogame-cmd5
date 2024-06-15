@@ -30,7 +30,22 @@ namespace BLECmd {
      * @param startChar Start character of the loop
      * @param endChar End character of the loop
      */
- 
+    //% blockId="clearbuff" block="Clear Buffer"
+    export function clearbuff() {
+    let bx: Buffer;
+    bSize = 20
+    while (true) {
+        bx = bluetooth.uartReadBuffer();
+        basic.pause(10)
+        if (bx.length == 0) {
+            break;
+        }
+        while (bx.length > 0) {
+            let chunk = bx.slice(0, bSize);
+            bx = bx.slice(bSize);
+        }
+      }
+    }
 
     //% blockId="expandCommand" block="Convert BLE command |input %s"
     export function expandCommand(s: string): string {
