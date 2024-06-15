@@ -35,7 +35,7 @@ namespace BLECmd {
     //% value2.shadow="value"
     //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
-        return value1 == value2;
+        return value1.compare(value2);
     }
 
     /**
