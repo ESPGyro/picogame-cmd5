@@ -1,7 +1,7 @@
 {
     "BLECmd.expandCommand|block": "處理迴圈功能|輸入指令 %a",
     "BLECmd.selectAction|block": "基本指令|%move|動作",
-    "BLECmd.clearbuffer|block": "清除藍牙暫存資料",
+    "BLECmd.clearbuff|block": "清除藍牙暫存資料",
     "Actions.m1|block": "前進",
     "Actions.m2|block": "後退",
     "Actions.m3|block": "左轉",
