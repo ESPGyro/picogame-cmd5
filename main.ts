@@ -46,9 +46,8 @@ namespace BLECmd {
      */
     //% blockId="clearbuff" block="Clear Buffer"
     //% weight=0
-    export function clearbuff() {
+    export function clearbuff(): void {
     let bx: Buffer;
-    bSize = 20
     while (true) {
         bx = bluetooth.uartReadBuffer();
         basic.pause(10)
@@ -56,10 +55,11 @@ namespace BLECmd {
             break;
         }
         while (bx.length > 0) {
-            let chunk = bx.slice(0, bSize);
-            bx = bx.slice(bSize);
+            let chunk = bx.slice(0, 20);
+            bx = bx.slice(20);
         }
       }
+       return;
     }
 
     //% blockId="expandCommand" block="Convert BLE command |input %s"
