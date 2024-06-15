@@ -32,10 +32,10 @@ namespace BLECmd {
 
 
    
-    //% block="%value1 等於 %value2 ?"
-    //% blockExternalInput=true
-    //% value1.shadow="value"
-    //% value2.shadow="value"
+   //% block="%value1 等於 %value2 ?"
+    //% value1.shadow="text"
+    //% value2.shadow="dropdown"
+    //% value2.fieldEditor="gridpicker" value2.fieldOptions.columns=3
     //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
        if (value2 == "10") {
