@@ -11,5 +11,9 @@
         "README.md",
         "_locales/zh/BLECmd-strings.json"
     ],
-    "public": true
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }
