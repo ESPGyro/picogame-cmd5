@@ -9,22 +9,7 @@ namespace BLECmd {
      * @param startChar Start character of the loop
      * @param endChar End character of the loop
      */
-   export enum Actions {
-     Forward = 1,
-     Backward = 2,
-}
-   //% blockId="selectAction" block="basic cmd |action %move"
-   //% blockGap=1 weight=10 
-    export function selectAction(move: Actions): void {
-        if (move == Actions.Forward) {
-            return "1";
-        } else if (move == Actions.Backward) {
-            return "2";
-        }
-        return "";
-    }
-
-    
+   
     //% blockId="expandCommand" block="Convert BLE command |input %s"
     export function expandCommand(s: string): string {
         let newStr: string = s.substr(2, s.length - 1);
