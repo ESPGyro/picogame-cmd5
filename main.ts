@@ -37,6 +37,7 @@ namespace BLECmd {
      */
    //% blockId="selectAction" block="action|%move| "
    //% blockGap=1 weight=10 
+   //% blockExternalInput=true
    //% move.fieldEditor="gridpicker" move.fieldOptions.columns=3
     export function selectAction(move: Actions): string {
         if (move == Actions.Forward) {
