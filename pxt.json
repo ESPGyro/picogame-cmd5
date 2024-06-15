@@ -1,0 +1,15 @@
+{
+    "name": "BLECmd",
+    "version": "1.0.0",
+    "description": "PicoGame 藍牙指令編輯器轉換積木",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md",
+        "_locales/zh/BLECmd-strings.json"
+    ],
+    "public": true
+}
