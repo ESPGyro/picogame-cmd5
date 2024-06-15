@@ -3,9 +3,9 @@
  */
    enum Actions {
     //% blockId="Forward" block="Forward"
-    Forward = 1,
+    Forward = "1",
     //% blockId="Backward" block="Backward"
-    Backward = 2
+    Backward = "2"
 } 
 //% color=#0fbc11 icon="\uf113" block="藍牙指令編輯器"
 namespace BLECmd {
@@ -20,7 +20,7 @@ namespace BLECmd {
     //% blockExternalInput=true
     //% value1.shadow="value"
     //% value2.shadow="value"
-    //% weight=100
+    //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
         return value1 == value2;
     }
