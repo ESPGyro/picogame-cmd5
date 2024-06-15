@@ -1,6 +1,14 @@
 {
     "BLECmd.expandCommand|block": "處理迴圈功能|輸入指令 %a",
-    "BLECmd.selectAction|block": "基本指令|%move|動作 ",
-    "Actions.Forward|block": "前進",
-    "Actions.Backward|block": "後退"
+    "BLECmd.selectAction|block": "基本指令|%move|動作",
+    "BLECmd.clearbuffer|block": "清除藍牙暫存資料",
+    "Actions.m1|block": "前進",
+    "Actions.m2|block": "後退",
+    "Actions.m3|block": "左轉",
+    "Actions.m4|block": "右轉",
+    "Actions.m7|block": "終點",
+    "Actions.m8|block": "停止",
+    "Actions.m9|block": "車頭燈",
+    "Actions.m10|block": "警示燈",
+    "Actions.m11|block": "喇叭"
 }
