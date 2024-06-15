@@ -36,11 +36,11 @@ namespace BLECmd {
     //% weight=10
     export function isEqual(value1: string, value2: Actions): boolean {
        if (value2 == "10") {
-          return value1==="a";
+          return value1=="a";
        } else if (value2 == "11") {
-          return value1==="b";
+          return value1=="b";
        } else {
-        return value1===value2;
+        return value1==value2;
        }
     }
 
