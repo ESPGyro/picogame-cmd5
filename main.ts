@@ -17,7 +17,7 @@ namespace BLECmd {
     //% block="%direction"
     //% direction.shadow="dropdown" direction.options="forward|backward"
     //% weight=100
-    export function moveDirection(direction: string): void {
+    export function keyState(direction: string): void {
         if (direction == "forward") {
             // 在这里编写前进的逻辑
             basic.showString("前進");
